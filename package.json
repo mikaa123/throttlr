@@ -1,0 +1,30 @@
+{
+  "name": "throttlr",
+  "version": "0.0.1",
+  "description": "Buffer and execute tasks at defined time interval.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "babel index.js --out-dir lib --watch",
+    "postinstall": "babel index.js --out-dir lib",
+    "test": "xo"
+  },
+  "keywords": [
+    "throttle"
+  ],
+  "author": "Michael Sokol <misokol123@gmail.com> (http://sokolmichael.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "semicolon": false,
+    "rules": {
+      "no-unused-expressions": 0
+    }
+  }
+}
